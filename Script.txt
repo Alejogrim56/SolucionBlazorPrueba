@@ -10,7 +10,7 @@ CREATE TABLE Departamento(
 IdDepartamento int primary key identity(1,1),
 Nombre varchar(50) not null
 )
-go
+
 
 
 CREATE TABLE Empleado(
@@ -21,23 +21,23 @@ Sueldo int not null,
 FechaContrato date not null
 )
 
-go
+
 
 --=========== insertar registros =============
 
 
 insert into Departamento(nombre) values
-('Administración'),
+('AdministraciÃ³n'),
 ('Marketing'),
 ('Ventas'),
 ('Comercio')
 
-go
+
 
 insert into Empleado(nombreCompleto,idDepartamento,sueldo,fechaContrato) values
 ('Franco Hernandez',1,1400,getdate())
 
-go
+
 
 select * from Departamento
 select * from Empleado
